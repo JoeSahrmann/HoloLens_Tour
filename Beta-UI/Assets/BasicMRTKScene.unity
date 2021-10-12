@@ -974,6 +974,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LabelOnlyTooltip
       objectReference: {fileID: 0}
+    - target: {fileID: 8219002942482847169, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1345,6 +1349,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bezier ToolTip
       objectReference: {fileID: 0}
+    - target: {fileID: 4014241828956980662, guid: 08b79a69f78da1d4aa8e117f1cbd9cef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5809553155692216854, guid: 08b79a69f78da1d4aa8e117f1cbd9cef, type: 3}
       propertyPath: m_textAlignment
       value: 65535
@@ -1359,7 +1367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7648513102559648688, guid: 08b79a69f78da1d4aa8e117f1cbd9cef, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7648513102559648688, guid: 08b79a69f78da1d4aa8e117f1cbd9cef, type: 3}
       propertyPath: m_Positions.Array.data[0].x
@@ -2602,6 +2610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NearMenu2x4
       objectReference: {fileID: 0}
+    - target: {fileID: 1333129552543361702, guid: 4cc25867f13a101459aeac0807dc2d30, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1630636061323851062, guid: 4cc25867f13a101459aeac0807dc2d30, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -3262,6 +3274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Constrained Parabola Tooltip
       objectReference: {fileID: 0}
+    - target: {fileID: 1439306413935240, guid: 4e88d209b9ebe8b42a4d4748bd9b7141, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4104249324394746, guid: 4e88d209b9ebe8b42a4d4748bd9b7141, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.15336993
@@ -3312,7 +3328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 120116089410604596, guid: 4e88d209b9ebe8b42a4d4748bd9b7141, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 120116089410604596, guid: 4e88d209b9ebe8b42a4d4748bd9b7141, type: 3}
       propertyPath: m_Positions.Array.data[0].x
