@@ -1,0 +1,6 @@
+- Follow along in class and build the basis of the game
+- Duplicate “Level1” to create a “Level2” scene. Modify Level2 to create an interesting second level of the game through the use of bumpers, floor pieces, other prototype assets, enemies, coins, and spawners.
+- In Level 2, modify the GameOverCanvas to have the “Play Again” button load “Level2” when pressed.
+- In Level 2, modify the GameOverCanvas by adding a second “Restart” button that loads “Level1” when pressed.
+- In Level1, create a BeatLevel UI Canvas, “Level Victory” message, and “Next Level” button, that when pressed, loads “Level2”.
+- In Level1, modify the GameManager to allow you to beat the level by collecting 5 coins and bring up the BeatLevel UI Canvas, so players are congratulated and then can move on to Level2. Feel free to make Level2 either more difficult to beat or have no victory state.
