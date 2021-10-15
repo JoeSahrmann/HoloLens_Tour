@@ -9,5 +9,6 @@ EditorBuildSettings:
     path: Assets/BasicMRTKScene.unity
     guid: 54208c493a54be24eb2e4ad27c49df32
   m_configObjects:
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 935f2cbe820c69649ba20be82fa20445, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 342d611b47124874685a52012b0a5b57, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 5e30d290d64696343950c6038b90e1be, type: 2}
