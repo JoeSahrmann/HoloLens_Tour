@@ -15,7 +15,6 @@ MonoBehaviour:
   Keys: 0e00000001000000
   Values:
   - featureSets:
-    - com.microsoft.openxr.featureset.appremoting
     - com.microsoft.openxr.featureset.hololens
   - featureSets:
-    - com.microsoft.openxr.featureset.appremoting
+    - com.microsoft.openxr.featureset.wmr
