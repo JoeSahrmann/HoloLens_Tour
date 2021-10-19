@@ -9,21 +9,21 @@ public class RotateCube : MonoBehaviour
     public GameObject InfoCube;
     public Transform curentTran;
     private Animator anim;
-    // private Quaternion currentRot;
-    private float tempCurRot;
-    private float nextTurn = 0.0f;
-    private float lastTurn = 0.0f;
-    //new way
+    public Text debug; 
     private int ButtonClicked;
     private float waitTime = 1.0f;
     private float timer = 0.0f;
     private float Inversetimer = 1.0f;
+    private float Key = 0.0f;
+    private float nxtfirstClick = 0.0f;
+    private string lastClicked; 
     // Start is called before the first frame update
     void Start()
     {
         
         anim = InfoCube.gameObject.GetComponent<Animator>();
-        
+       
+
     }
     // Update is called once per frame
     void Update()
@@ -44,57 +44,59 @@ public class RotateCube : MonoBehaviour
     public void NextClicked()
     {
         ButtonClicked = 1;
-        Debug.Log("clicked");
-       /* anim.Play("NextAni");
-        if (nextTurn >= 360.0f)
+        lastClicked = "next";
+        nxtfirstClick += 1.0f;
+        // there are 4 stops so 0, .25, .5, .75, 1
+        if (lastClicked == "prev")
         {
-            nextTurn = 0.0f;
+            Key = 1.0f - Key;
         }
         else
-        {
-            float stopRot = 90.000000001f;
-            tempCurRot = curentTran.eulerAngles.y;
-            nextTurn = stopRot + tempCurRot;
-            anim.speed = 1;
-            //anim.Play("MoveCube");
+        { 
+            if (Key == 1.0f)
+            {
+                Key = 0.0f;
+             }
+            else
+            {
+           
+                Key += 0.25f; 
+                
 
+            }
 
-
-        }*/
+        }
+       
         
-        //Debug.Log("stopRot:  ", stopRot.ToString());
     }
     public void PreviousClicked()
     {
         ButtonClicked = -1;
-       /* anim.Play("NextAni");
-        if (lastTurn >= -360.0f)
+        if (lastClicked == "next")
         {
-            lastTurn = 0.0f;
+            Key = 1.0f - Key;
         }
         else
         {
-            float stopRot = -90.000000001f;
-            tempCurRot = curentTran.eulerAngles.y;
-            lastTurn = stopRot + tempCurRot;
-            
-            //anim.Play("MoveCube");
-            
+            if (Key == 1.0f)
+            {
+                Key = 0.0f;
+            }
+            else
+            {
 
+                Key += 0.25f;
+               
+ 
 
-        }*/
+            }
+        }
+        
+        lastClicked = "prev";
     }
     
     public void RotChecker()
     {
-
-
-        /*| nextTurn == 180.0f | nextTurn == 270.0f | nextTurn == 360.0f
-        if (curentTran.eulerAngles.y > nextTurn )
-        {
-            Debug.Log("should stop");
-            anim.speed = 0;
-        }*/
         switch (ButtonClicked)
         {
             case 1:
@@ -109,9 +111,22 @@ public class RotateCube : MonoBehaviour
                 }
                 else
                 {
-                    Inversetimer -= timer;
                     anim.Play("NextAni");
                     anim.speed = 1;
+                    /*switch (lastClicked)
+                    {
+                        case "next":
+                            
+                            anim.Play("NextAni");
+                            anim.speed = 1;
+                            break;
+                        case "prev":
+                            debug.text = Key.ToString();
+                            anim.Play("PrevAni",0, Key);
+                            anim.speed = 1;
+                            break;
+                    }*/
+
                 }
                 break;
 
@@ -131,9 +146,23 @@ public class RotateCube : MonoBehaviour
                 }
                 else
                 {
-                    Inversetimer -= timer;
                     anim.Play("PrevAni");
                     anim.speed = 1;
+                    /*  anim.Play("PrevAni", 0, 0.5f);
+                      anim.speed = 1;
+                      switch (lastClicked)
+                      {
+                          case "prev":
+
+                              anim1.Rewind("NextAni");
+                              anim.speed = 1;
+                              break;
+                          case "next":
+                              debug.text = Key.ToString();
+                              anim.Play("NextAni", 0, Key);
+                              anim.speed = 1;
+                              break;
+                      }*/
                 }
                 break;
 
