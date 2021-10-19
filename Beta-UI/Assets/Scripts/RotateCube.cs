@@ -13,6 +13,11 @@ public class RotateCube : MonoBehaviour
     private float tempCurRot;
     private float nextTurn = 0.0f;
     private float lastTurn = 0.0f;
+    //new way
+    private int ButtonClicked;
+    private float waitTime = 1.0f;
+    private float timer = 0.0f;
+    private float Inversetimer = 1.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,8 +43,9 @@ public class RotateCube : MonoBehaviour
     }
     public void NextClicked()
     {
+        ButtonClicked = 1;
         Debug.Log("clicked");
-        anim.Play("NextAni");
+       /* anim.Play("NextAni");
         if (nextTurn >= 360.0f)
         {
             nextTurn = 0.0f;
@@ -54,13 +60,14 @@ public class RotateCube : MonoBehaviour
 
 
 
-        }
+        }*/
         
         //Debug.Log("stopRot:  ", stopRot.ToString());
     }
     public void PreviousClicked()
     {
-        anim.Play("NextAni");
+        ButtonClicked = -1;
+       /* anim.Play("NextAni");
         if (lastTurn >= -360.0f)
         {
             lastTurn = 0.0f;
@@ -75,18 +82,50 @@ public class RotateCube : MonoBehaviour
             
 
 
-        }
+        }*/
     }
     
     public void RotChecker()
     {
 
 
-        //| nextTurn == 180.0f | nextTurn == 270.0f | nextTurn == 360.0f
+        /*| nextTurn == 180.0f | nextTurn == 270.0f | nextTurn == 360.0f
         if (curentTran.eulerAngles.y > nextTurn )
         {
             Debug.Log("should stop");
             anim.speed = 0;
+        }*/
+        switch (ButtonClicked)
+        {
+            case 1:
+                timer += Time.deltaTime;
+                
+                if (timer > waitTime)
+                {
+                    // Remove the recorded 1 seconds.
+                    timer = timer - waitTime;
+                    ButtonClicked = 0;
+                    Inversetimer = 1.0f;
+                }
+                else
+                {
+                    Inversetimer -= timer;
+                    anim.Play("NextAni");
+                    anim.speed = 1;
+                }
+                break;
+
+            case 0:
+                anim.speed = 0;
+                break;
+
+            case -1:
+                timer += Time.deltaTime;
+                break;
+
+            default:
+                anim.speed = 0;
+                break;
         }
 
     }
