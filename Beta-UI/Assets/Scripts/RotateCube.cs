@@ -1,70 +1,93 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Animations;
 
 public class RotateCube : MonoBehaviour
 {
     public GameObject InfoCube;
-    public float RotationSpeed = 1.0F;
-    private bool next = false;
-    private bool prev = false;
-    private float yAxis; 
+    public Transform curentTran;
+    private Animator anim;
+    // private Quaternion currentRot;
+    private float tempCurRot;
+    private float nextTurn = 0.0f;
+    private float lastTurn = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
+        
+        anim = InfoCube.gameObject.GetComponent<Animator>();
         
     }
     // Update is called once per frame
     void Update()
     {
-        if (next)
+        RotChecker();
+        if (Input.GetKeyDown(KeyCode.J))
         {
-            float curYaxis = InfoCube.transform.rotation.y;
-            if (curYaxis == yAxis)
-            {
-                next = false;
-            }
-            if (curYaxis != yAxis)
-            {
-                InfoCube.transform.Rotate(0.0f, yAxis * (RotationSpeed * Time.deltaTime), 0.0f);
-                next = true;
-                if(curYaxis == 90.0f)
-                {
-                    Debug.Log("yaxis");
-                         Debug.Log("Curent Rot");
-                }
-            }
             
+            anim.Play("NextAni");
         }
-        if (prev)
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            if (yAxis == InfoCube.transform.rotation.y)
-            {
-                prev = false;
-            }
-            if (yAxis != InfoCube.transform.rotation.y)
-            {  
-                InfoCube.transform.Rotate(0.0f, yAxis * (RotationSpeed * Time.deltaTime), 0.0f);
-                prev = true;
-            }
-          
+
+            anim.enabled = false;
         }
+       
     }
     public void NextClicked()
     {
-        yAxis = InfoCube.transform.rotation.y;
-        yAxis += 90.0f;
-        next = true;
-        prev = false;
-        //InfoCube.transform.Rotate(0.0f, yAxis * (RotationSpeed * Time.deltaTime) , 0.0f );
+        Debug.Log("clicked");
+        anim.Play("NextAni");
+        if (nextTurn >= 360.0f)
+        {
+            nextTurn = 0.0f;
+        }
+        else
+        {
+            float stopRot = 90.000000001f;
+            tempCurRot = curentTran.eulerAngles.y;
+            nextTurn = stopRot + tempCurRot;
+            anim.speed = 1;
+            //anim.Play("MoveCube");
 
+
+
+        }
+        
+        //Debug.Log("stopRot:  ", stopRot.ToString());
     }
     public void PreviousClicked()
     {
-        yAxis = InfoCube.transform.rotation.y;
-        yAxis -= 90.0f;
-        next = false;
-        prev = true;
-        //InfoCube.transform.Rotate(0.0f, yAxis * (RotationSpeed * Time.deltaTime), 0.0f);
+        anim.Play("NextAni");
+        if (lastTurn >= -360.0f)
+        {
+            lastTurn = 0.0f;
+        }
+        else
+        {
+            float stopRot = -90.000000001f;
+            tempCurRot = curentTran.eulerAngles.y;
+            lastTurn = stopRot + tempCurRot;
+            
+            //anim.Play("MoveCube");
+            
+
+
+        }
+    }
+    
+    public void RotChecker()
+    {
+
+
+        //| nextTurn == 180.0f | nextTurn == 270.0f | nextTurn == 360.0f
+        if (curentTran.eulerAngles.y > nextTurn )
+        {
+            Debug.Log("should stop");
+            anim.speed = 0;
+        }
+
     }
 }
