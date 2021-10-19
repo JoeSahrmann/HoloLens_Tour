@@ -121,6 +121,20 @@ public class RotateCube : MonoBehaviour
 
             case -1:
                 timer += Time.deltaTime;
+
+                if (timer > waitTime)
+                {
+                    // Remove the recorded 1 seconds.
+                    timer = timer - waitTime;
+                    ButtonClicked = 0;
+                    Inversetimer = 1.0f;
+                }
+                else
+                {
+                    Inversetimer -= timer;
+                    anim.Play("PrevAni");
+                    anim.speed = 1;
+                }
                 break;
 
             default:
