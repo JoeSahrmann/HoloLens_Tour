@@ -139,7 +139,6 @@ PlayerSettings:
   - {fileID: 5595846992533851724, guid: ea2c8cd365b89b44682ed917eed16f68, type: 2}
   - {fileID: 684526019821423348, guid: 99ef835746a2a5b47a5e764e5644903c, type: 2}
   - {fileID: 6454646718950778843, guid: 7a5074a134b117449bde7c828b3ea418, type: 2}
-  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -615,11 +614,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Template3D
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: D:\HoloLens2\Capstone\HoloLens_Tour\Vuforia-Joe\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 809b2305c4e5d801
   metroApplicationDescription: Template_3D
   wsaImages: {}
   metroTileShortName: Vuforia-Joe

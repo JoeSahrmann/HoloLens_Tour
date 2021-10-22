@@ -8,6 +8,8 @@ public class FollowingMenu : MonoBehaviour
     // Start is called before the first frame update
     public float posSpeed = 1.0F;
     public float rotSpeed = 1.0F;
+    public float Xdistance;
+    public float Zdistance;
     void Start()
     {
         
@@ -17,7 +19,7 @@ public class FollowingMenu : MonoBehaviour
     void Update()
     {
         Transform XRcamera = Camera.main.transform;
-        Vector3 newMenu = new Vector3(XRcamera.position.x + 0.15f, XRcamera.position.y , XRcamera.position.z + 0.6f);
+        Vector3 newMenu = new Vector3(XRcamera.position.x + Xdistance, XRcamera.position.y , XRcamera.position.z + Zdistance);
         Menu.position = Vector3.Lerp(Menu.position, newMenu, (posSpeed * Time.deltaTime));
 
         // rotation movement
