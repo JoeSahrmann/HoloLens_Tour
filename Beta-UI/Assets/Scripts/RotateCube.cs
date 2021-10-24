@@ -7,7 +7,7 @@ using UnityEngine.Animations;
 public class RotateCube : MonoBehaviour
 {
     public GameObject InfoCube;
-    public Transform curentTran;
+    //public Transform curentTran;
     private Animator anim;
     public Text debug; 
     private int ButtonClicked;
