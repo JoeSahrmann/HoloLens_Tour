@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SlideInCards : MonoBehaviour
 {
+    public GameObject CardObject;
     public GameObject CardHolder;
+    public GameObject MRTKSceneContent;
     private Animator anim;
     private int buttonClicked;
     private float waitTime = 1.0f;
@@ -12,13 +14,17 @@ public class SlideInCards : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = CardHolder.gameObject.GetComponent<Animator>();
+        anim = CardObject.gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        AnimationStarter();
+        //AnimationStarter();
+    }
+    public void CardMover()
+    {
+        CardHolder.transform.SetParent(MRTKSceneContent.transform);
     }
     public void LeftPalmButtonClicked()
     {

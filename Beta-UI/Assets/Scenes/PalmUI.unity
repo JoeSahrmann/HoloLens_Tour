@@ -1229,7 +1229,19 @@ MonoBehaviour:
       m_Calls: []
   onHoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1165138667}
+        m_TargetAssemblyTypeName: SlideInCards, Assembly-CSharp
+        m_MethodName: CardMover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverExited:
     m_PersistentCalls:
       m_Calls: []
@@ -5859,7 +5871,19 @@ MonoBehaviour:
       m_Calls: []
   onHoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1165138667}
+        m_TargetAssemblyTypeName: SlideInCards, Assembly-CSharp
+        m_MethodName: CardMover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverExited:
     m_PersistentCalls:
       m_Calls: []
@@ -10044,7 +10068,19 @@ MonoBehaviour:
       m_Calls: []
   onHoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1165138667}
+        m_TargetAssemblyTypeName: SlideInCards, Assembly-CSharp
+        m_MethodName: CardMover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverExited:
     m_PersistentCalls:
       m_Calls: []
@@ -12958,7 +12994,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1414378504363861352, guid: 2ba5d9246f2c88f48a938fa66e6d3eef, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2220658687173747186, guid: 2ba5d9246f2c88f48a938fa66e6d3eef, type: 3}
       propertyPath: iconQuadTexture
@@ -13076,7 +13112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1414378504363861352, guid: 2ba5d9246f2c88f48a938fa66e6d3eef, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2220658687173747186, guid: 2ba5d9246f2c88f48a938fa66e6d3eef, type: 3}
       propertyPath: iconQuadTexture
@@ -13508,7 +13544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1414378504363861352, guid: 2ba5d9246f2c88f48a938fa66e6d3eef, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2220658687173747186, guid: 2ba5d9246f2c88f48a938fa66e6d3eef, type: 3}
       propertyPath: iconQuadTexture
@@ -13626,7 +13662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1414378504363861352, guid: 2ba5d9246f2c88f48a938fa66e6d3eef, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2220658687173747186, guid: 2ba5d9246f2c88f48a938fa66e6d3eef, type: 3}
       propertyPath: iconQuadTexture
@@ -15523,12 +15559,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165138664}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96ceb666730d3ed46a3bbef91131e320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CardHolder: {fileID: 1399857208}
+  CardObject: {fileID: 91896852}
+  CardHolder: {fileID: 182464821}
+  MRTKSceneContent: {fileID: 702868368}
 --- !u!1 &1172223433
 GameObject:
   m_ObjectHideFlags: 0
@@ -26310,7 +26348,19 @@ MonoBehaviour:
       m_Calls: []
   onHoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1165138667}
+        m_TargetAssemblyTypeName: SlideInCards, Assembly-CSharp
+        m_MethodName: CardMover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverExited:
     m_PersistentCalls:
       m_Calls: []
