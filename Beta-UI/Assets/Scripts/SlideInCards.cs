@@ -20,7 +20,7 @@ public class SlideInCards : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //AnimationStarter();
+        AnimationStarter();
     }
     public void CardMover()
     {
@@ -42,12 +42,12 @@ public class SlideInCards : MonoBehaviour
         {
             case 0:
                 timer += Time.deltaTime;
-
+                Debug.Log("animated");
                 if (timer > waitTime)
                 {
                     // Remove the recorded 1 seconds.
                     timer = timer - waitTime;
-                    buttonClicked = 0;
+                    buttonClicked = 3;
          
                 }
                 else
@@ -64,7 +64,7 @@ public class SlideInCards : MonoBehaviour
                 {
                     // Remove the recorded 1 seconds.
                     timer = timer - waitTime;
-                    buttonClicked = 0;
+                    buttonClicked = 3;
                     
                 }
                 else
@@ -73,6 +73,9 @@ public class SlideInCards : MonoBehaviour
                     anim.speed = 1;
 
                 }
+                break;
+            case 3:
+                anim.speed = 0;
                 break;
             default:
                 anim.speed = 0;
