@@ -35,11 +35,12 @@ public class CardManager : MonoBehaviour
     public void ResetDiscoveryCardHolder()
     {
        // DiscoveryCardHolder.SetActive(false);
-        DiscoveryCardHolder.transform.SetParent(RightPalmMenu.transform, false);
+        DiscoveryCardHolder.transform.SetParent(RightPalmMenu.transform);
     }
     public void ResetExplorerCardHolder()
     {
         //ExplorerCardHolder.SetActive(false);
-        ExplorerCardHolder.transform.SetParent(LeftPalmMenu.transform, false);
+        ExplorerCardHolder.transform.SetParent(LeftPalmMenu.transform);
     }
+
 }
