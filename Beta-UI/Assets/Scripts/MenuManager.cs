@@ -30,8 +30,8 @@ public class MenuManager : MonoBehaviour
     void Update()
     {
         StickMenu2World();
-        //RightCheckMenuActive();
-       // LeftCheckMenuActive();
+        RightCheckMenuActive();
+        LeftCheckMenuActive();
     }
     public void RightPalmOpened()
     {
