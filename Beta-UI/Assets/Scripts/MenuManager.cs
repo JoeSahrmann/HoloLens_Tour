@@ -14,21 +14,26 @@ public class MenuManager : MonoBehaviour
     public GameObject RightPalmMenu;
     public GameObject RightOpenButton;
     public GameObject RightCloseButton;
+    private Transform RightMenuStartPOS;
 
     //left hand
     public GameObject LeftHandMenuHolder;
     public GameObject LeftPalmMenu;
     public GameObject LeftOpenButton;
     public GameObject LeftCloseButton;
+    private Transform LeftMenuStartPOS;
+
     private int R_Lpalm = 0;
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        RightMenuStartPOS = RightPalmMenu.transform;
+        LeftMenuStartPOS = LeftPalmMenu.transform;
         StickMenu2World();
         RightCheckMenuActive();
         LeftCheckMenuActive();
@@ -39,6 +44,9 @@ public class MenuManager : MonoBehaviour
     }
     public void RightPalmClosed()
     {
+        RightHandMenuHolder.transform.position = RightMenuStartPOS.position;
+        RightHandMenuHolder.transform.rotation = RightMenuStartPOS.rotation;
+        //RightHandMenuHolder.transform POSIBLY NEED SCALE
         RightHandMenuHolder.transform.SetParent(RightPalmMenu.transform);
         RightHandMenuHolder.SetActive(false);
     }
@@ -48,6 +56,8 @@ public class MenuManager : MonoBehaviour
     }
     public void LeftPalmClosed()
     {
+        LeftHandMenuHolder.transform.position = LeftMenuStartPOS.position;
+        LeftHandMenuHolder.transform.rotation = LeftMenuStartPOS.rotation;
         LeftHandMenuHolder.transform.SetParent(LeftPalmMenu.transform);
         LeftHandMenuHolder.SetActive(false);
     }
