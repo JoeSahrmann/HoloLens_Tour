@@ -17,6 +17,7 @@ public class MenuManager : MonoBehaviour
     private Transform RightMenuStartPOS;
 
     //left hand
+    public GameObject LeftMenuPackage;
     public GameObject LeftHandMenuHolder;
     public GameObject LeftPalmMenu;
     public GameObject LeftOpenButton;
@@ -24,6 +25,7 @@ public class MenuManager : MonoBehaviour
     private Transform LeftMenuStartPOS;
 
     private int R_Lpalm = 0;
+    private bool L_palm = false;
     void Start()
     {
        
@@ -41,6 +43,10 @@ public class MenuManager : MonoBehaviour
     public void RightPalmOpened()
     {
         R_Lpalm = 1;
+        RightHandMenuHolder.transform.position = RightMenuStartPOS.position;
+        RightHandMenuHolder.transform.rotation = RightMenuStartPOS.rotation;
+        //RightHandMenuHolder.transform POSIBLY NEED SCALE
+        RightHandMenuHolder.transform.SetParent(RightPalmMenu.transform);
     }
     public void RightPalmClosed()
     {
@@ -53,13 +59,31 @@ public class MenuManager : MonoBehaviour
     public void LeftPalmOpened()
     {
         R_Lpalm = 2;
-    }
-    public void LeftPalmClosed()
-    {
+        LeftMenuStartPOS = LeftPalmMenu.transform;
         LeftHandMenuHolder.transform.position = LeftMenuStartPOS.position;
         LeftHandMenuHolder.transform.rotation = LeftMenuStartPOS.rotation;
         LeftHandMenuHolder.transform.SetParent(LeftPalmMenu.transform);
-        LeftHandMenuHolder.SetActive(false);
+    }
+    public void LeftPalmCloseButton()
+    {
+        L_palm = true;
+
+    }
+    public void LeftMenu_or_MapCloseButton()
+    {
+        L_palm = false;
+    }
+    public void LeftPalmClosed()
+    {
+        LeftMenuStartPOS = LeftPalmMenu.transform;
+        LeftHandMenuHolder.transform.position = LeftMenuStartPOS.position;
+        LeftHandMenuHolder.transform.rotation = LeftMenuStartPOS.rotation;
+        LeftHandMenuHolder.transform.SetParent(LeftPalmMenu.transform);
+        if (L_palm)
+        {
+            LeftHandMenuHolder.SetActive(false);
+        }
+        
     }
 
     private void StickMenu2World()
@@ -111,8 +135,17 @@ public class MenuManager : MonoBehaviour
     {
         if (LeftHandMenuHolder.activeInHierarchy)
         {
-            LeftOpenButton.SetActive(false);
-            LeftCloseButton.SetActive(true);
+            if (LeftMenuPackage.activeInHierarchy)
+            {
+                LeftOpenButton.SetActive(false);
+                LeftCloseButton.SetActive(true);
+            }
+            else
+            {
+                LeftOpenButton.SetActive(true);
+                LeftCloseButton.SetActive(false);
+            }
+           
         }
         else
         {

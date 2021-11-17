@@ -191,4 +191,25 @@ public class TabManager : MonoBehaviour
 
         StateChecker();
     }
+
+    public void ResetTabs()
+    {
+        //turn on instructions
+        InstructionCard.SetActive(true);
+        //turn off the icons
+        GeneralTabON.SetActive(false);
+        NewsTabON.SetActive(false);
+        DirectorTabON.SetActive(false);
+        FacultyTabON.SetActive(false);
+        //reset the cards
+        GC1.SetActive(false);
+        GC2.SetActive(false);
+        NC1.SetActive(false);
+        NC2.SetActive(false);
+        DC1.SetActive(false);
+        DC2.SetActive(false);
+        FC1.SetActive(false);
+        FC2.SetActive(false);
+
+    }
 }

@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/BetaUI.unity
+    path: Assets/Scenes/Tutorial.unity
     guid: 54208c493a54be24eb2e4ad27c49df32
+  - enabled: 1
+    path: Assets/Scenes/Explorer.unity
+    guid: 60b34c6ea9d14564498c50bd709288cf
+  - enabled: 1
+    path: Assets/Scenes/Discovery.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 77cbd19855a00d7489189b7854a5e47b, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 342d611b47124874685a52012b0a5b57, type: 2}
