@@ -820,7 +820,7 @@ GameObject:
   - component: {fileID: 31959365}
   - component: {fileID: 31959364}
   m_Layer: 5
-  m_Name: PurposeText
+  m_Name: GeneralDetails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3347,7 +3347,7 @@ PrefabInstance:
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1765881333}
+      objectReference: {fileID: 1765881338}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -3382,7 +3382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DirectorTabSelected
+      value: OrderTabSelected
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -3402,7 +3402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TabManager, Assembly-CSharp
+      value: LnCTabManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -3552,11 +3552,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: DirectorONicon
+      value: OrderONicon
       objectReference: {fileID: 0}
     - target: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: DirectorOFFicon
+      value: OrderOFFicon
       objectReference: {fileID: 0}
     - target: {fileID: 8420753225450248279, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Mesh
@@ -3572,6 +3572,11 @@ Transform:
 --- !u!1 &105165572 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
+  m_PrefabInstance: {fileID: 105165570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &105165573 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
   m_PrefabInstance: {fileID: 105165570}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &108620211
@@ -7111,7 +7116,7 @@ PrefabInstance:
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1765881333}
+      objectReference: {fileID: 1765881338}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -7150,7 +7155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GeneralTabSelected
+      value: LibraryHoursTabSelected
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -7170,7 +7175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TabManager, Assembly-CSharp
+      value: LnCTabManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -7326,7 +7331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: GeneralONicon
+      value: LibraryHoursONicon
       objectReference: {fileID: 0}
     - target: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_IsActive
@@ -7334,7 +7339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: GeneralOFFicon
+      value: LibraryHoursOFFicon
       objectReference: {fileID: 0}
     - target: {fileID: 8420753225450248279, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Mesh
@@ -7350,6 +7355,11 @@ Transform:
 --- !u!1 &180379197 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
+  m_PrefabInstance: {fileID: 180379195}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &180379198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
   m_PrefabInstance: {fileID: 180379195}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &181028935
@@ -8062,7 +8072,7 @@ PrefabInstance:
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1765881333}
+      objectReference: {fileID: 1765881338}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -8097,7 +8107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: NewsTabSelected
+      value: ServiceTabSelected
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -8117,7 +8127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TabManager, Assembly-CSharp
+      value: LnCTabManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -8265,11 +8275,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: NewsONicon
+      value: ServiceONicon
       objectReference: {fileID: 0}
     - target: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: NewsOFFicon
+      value: ServiceOFFicon
       objectReference: {fileID: 0}
     - target: {fileID: 8420753225450248279, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Mesh
@@ -8285,6 +8295,11 @@ Transform:
 --- !u!1 &200459330 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
+  m_PrefabInstance: {fileID: 200459328}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &200459331 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
   m_PrefabInstance: {fileID: 200459328}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &202993410
@@ -13569,7 +13584,7 @@ GameObject:
   - component: {fileID: 377861959}
   - component: {fileID: 377861958}
   m_Layer: 5
-  m_Name: FacultyText
+  m_Name: FacultyDetails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15359,7 +15374,7 @@ PrefabInstance:
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1765881333}
+      objectReference: {fileID: 1765881338}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -15394,7 +15409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DirectorTabSelected
+      value: EquipmentTabSelected
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -15414,7 +15429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TabManager, Assembly-CSharp
+      value: LnCTabManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -15578,11 +15593,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: DirectorONicon
+      value: EquipmentONicon
       objectReference: {fileID: 0}
     - target: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: DirectorOFFicon
+      value: EquipmentOFFicon
       objectReference: {fileID: 0}
     - target: {fileID: 8420753225450248279, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Mesh
@@ -15598,6 +15613,11 @@ Transform:
 --- !u!1 &427098328 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
+  m_PrefabInstance: {fileID: 427098326}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &427098329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
   m_PrefabInstance: {fileID: 427098326}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &428071093
@@ -15978,7 +15998,7 @@ GameObject:
   - component: {fileID: 431075223}
   - component: {fileID: 431075222}
   m_Layer: 5
-  m_Name: PurposeText
+  m_Name: NewsBlurb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16115,7 +16135,7 @@ GameObject:
   - component: {fileID: 434201971}
   - component: {fileID: 434201970}
   m_Layer: 5
-  m_Name: BioText
+  m_Name: DirDetails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16975,7 +16995,7 @@ PrefabInstance:
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1765881333}
+      objectReference: {fileID: 1765881338}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -17014,7 +17034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GeneralTabSelected
+      value: CafeHoursTabSelected
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -17034,7 +17054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TabManager, Assembly-CSharp
+      value: LnCTabManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -17190,7 +17210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: GeneralONicon
+      value: CafeHoursONicon
       objectReference: {fileID: 0}
     - target: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_IsActive
@@ -17198,7 +17218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: GeneralOFFicon
+      value: CafeHoursOFFicon
       objectReference: {fileID: 0}
     - target: {fileID: 8420753225450248279, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Mesh
@@ -17214,6 +17234,11 @@ Transform:
 --- !u!1 &464887662 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
+  m_PrefabInstance: {fileID: 464887660}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &464887663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
   m_PrefabInstance: {fileID: 464887660}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &466231015
@@ -19642,7 +19667,7 @@ GameObject:
   - component: {fileID: 523100782}
   - component: {fileID: 523100781}
   m_Layer: 5
-  m_Name: PurposeText
+  m_Name: GeneralBlurb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23844,7 +23869,7 @@ PrefabInstance:
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1765881333}
+      objectReference: {fileID: 1765881338}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -23879,7 +23904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: FacultyTabSelected
+      value: StaffTabSelected
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -23899,7 +23924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TabManager, Assembly-CSharp
+      value: LnCTabManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -24051,11 +24076,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: FacultyONicon
+      value: StaffONicon
       objectReference: {fileID: 0}
     - target: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: FacultyOFFicon
+      value: StaffOFFicon
       objectReference: {fileID: 0}
     - target: {fileID: 8420753225450248279, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Mesh
@@ -24071,6 +24096,11 @@ Transform:
 --- !u!1 &662820921 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
+  m_PrefabInstance: {fileID: 662820919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &662820922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
   m_PrefabInstance: {fileID: 662820919}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &665393002
@@ -32492,7 +32522,7 @@ GameObject:
   m_Component:
   - component: {fileID: 883871134}
   m_Layer: 0
-  m_Name: InstructionCard
+  m_Name: CafeInstructionCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33963,7 +33993,7 @@ GameObject:
   - component: {fileID: 936493740}
   - component: {fileID: 936493739}
   m_Layer: 5
-  m_Name: DirectorText
+  m_Name: DirectorBlurb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44718,7 +44748,7 @@ PrefabInstance:
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1765881333}
+      objectReference: {fileID: 1765881338}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -44753,7 +44783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: NewsTabSelected
+      value: MenuTabSelected
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -44773,7 +44803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TabManager, Assembly-CSharp
+      value: LnCTabManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -44921,11 +44951,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: NewsONicon
+      value: MenuONicon
       objectReference: {fileID: 0}
     - target: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: NewsOFFicon
+      value: MenuOFFicon
       objectReference: {fileID: 0}
     - target: {fileID: 8420753225450248279, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Mesh
@@ -44941,6 +44971,11 @@ Transform:
 --- !u!1 &1205007691 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
+  m_PrefabInstance: {fileID: 1205007689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1205007692 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
   m_PrefabInstance: {fileID: 1205007689}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1205972642
@@ -51657,7 +51692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1464012217}
   m_Layer: 0
-  m_Name: InstructionCard
+  m_Name: LibraryInstructionCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56517,7 +56552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1606390311}
   m_Layer: 0
-  m_Name: TourStopHolder
+  m_Name: LabStopHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59780,7 +59815,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1698348195
 Transform:
   m_ObjectHideFlags: 0
@@ -62898,6 +62933,8 @@ GameObject:
   - component: {fileID: 1765881333}
   - component: {fileID: 1765881330}
   - component: {fileID: 1765881331}
+  - component: {fileID: 1765881337}
+  - component: {fileID: 1765881338}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -62966,7 +63003,6 @@ MonoBehaviour:
   ModeText: {fileID: 2078104333}
   ExitModeON: {fileID: 1409124422}
   ExitModeOFF: {fileID: 1070024706}
-  StopTitleText: {fileID: 328257483}
 --- !u!114 &1765881332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63001,6 +63037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0d63e2dfb027754ab5402a889b566c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LabMenu: {fileID: 1606390310}
   GeneralTabON: {fileID: 694626652}
   GeneralTabOFF: {fileID: 694626650}
   GC1: {fileID: 1468023748}
@@ -63017,7 +63054,7 @@ MonoBehaviour:
   FacultyTabOFF: {fileID: 51656806}
   FC1: {fileID: 1577791411}
   FC2: {fileID: 429876380}
-  InstructionCard: {fileID: 840438619}
+  LabInstructionCard: {fileID: 840438619}
 --- !u!114 &1765881334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63059,6 +63096,75 @@ Transform:
   m_Father: {fileID: 548790880}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1765881337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765881328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9de12d15b04dab84597ca6297c27be6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LabMenu: {fileID: 1606390310}
+  LibraryMenu: {fileID: 358441097}
+  CafeMenu: {fileID: 1275174457}
+  Title: {fileID: 328257483}
+  GeneralBlurb: {fileID: 523100781}
+  GeneralDetails: {fileID: 31959364}
+  NewsBlurb: {fileID: 431075222}
+  NewsDetails: {fileID: 1938424938}
+  DirBlurb: {fileID: 936493739}
+  DirDetails: {fileID: 434201970}
+  FacBlurb: {fileID: 1997896393}
+  FacDetails: {fileID: 377861958}
+--- !u!114 &1765881338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765881328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23b03817a704964aba117dc6620d642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CafeMenu: {fileID: 1275174457}
+  CafeHoursTabON: {fileID: 464887663}
+  CafeHoursTabOFF: {fileID: 464887662}
+  CHC1: {fileID: 630814107}
+  CHC2: {fileID: 1642320197}
+  MenuTabON: {fileID: 1205007692}
+  MenuTabOFF: {fileID: 1205007691}
+  MC1: {fileID: 396455523}
+  MC2: {fileID: 1454058070}
+  OrderTabON: {fileID: 105165573}
+  OrderTabOFF: {fileID: 105165572}
+  OC1: {fileID: 616583739}
+  PayTabON: {fileID: 2101545682}
+  PayTabOFF: {fileID: 2101545681}
+  PC1: {fileID: 52011585}
+  CafeInstructionCard: {fileID: 883871133}
+  LibraryMenu: {fileID: 358441097}
+  LibraryHoursTabON: {fileID: 180379198}
+  LibraryHoursTabOFF: {fileID: 180379197}
+  LHC1: {fileID: 208513499}
+  LHC2: {fileID: 1771714570}
+  ServiceTabON: {fileID: 200459331}
+  ServiceTabOFF: {fileID: 200459330}
+  SC1: {fileID: 1257262458}
+  SC2: {fileID: 132134076}
+  EquipmentTabON: {fileID: 427098329}
+  EquipmentTabOFF: {fileID: 427098328}
+  EC1: {fileID: 932443094}
+  StaffTabON: {fileID: 662820922}
+  StaffTabOFF: {fileID: 662820921}
+  StaffC1: {fileID: 2011273476}
+  StaffC2: {fileID: 54240404}
+  LibraryInstructionCard: {fileID: 1464012216}
 --- !u!1 &1767938974
 GameObject:
   m_ObjectHideFlags: 0
@@ -68607,7 +68713,7 @@ GameObject:
   - component: {fileID: 1938424939}
   - component: {fileID: 1938424938}
   m_Layer: 5
-  m_Name: PurposeText
+  m_Name: NewsDetail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74362,7 +74468,7 @@ PrefabInstance:
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1765881333}
+      objectReference: {fileID: 1765881338}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -74397,7 +74503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: FacultyTabSelected
+      value: PayTabSelected
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -74417,7 +74523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TabManager, Assembly-CSharp
+      value: LnCTabManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3672905120266920269, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -74569,11 +74675,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: FacultyONicon
+      value: PayONicon
       objectReference: {fileID: 0}
     - target: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Name
-      value: FacultyOFFicon
+      value: PayOFFicon
       objectReference: {fileID: 0}
     - target: {fileID: 8420753225450248279, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
       propertyPath: m_Mesh
@@ -74589,6 +74695,11 @@ Transform:
 --- !u!1 &2101545681 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7491269213434809506, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
+  m_PrefabInstance: {fileID: 2101545679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2101545682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6346610758168510573, guid: 963058749caf8b4419fbe17c440aaafa, type: 3}
   m_PrefabInstance: {fileID: 2101545679}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2102415909

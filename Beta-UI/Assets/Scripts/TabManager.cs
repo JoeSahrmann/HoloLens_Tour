@@ -4,36 +4,37 @@ using UnityEngine;
 
 public class TabManager : MonoBehaviour
 {
+    /// <summary>
+    /// Lab Menu tabs
+    /// </summary>
+    //Lab Menu
+    public GameObject LabMenu;
     //General Tab on / off objects
     public GameObject GeneralTabON;
     public GameObject GeneralTabOFF;
     //General Tab Cards
-   // public GameObject GeneralCards;
     public GameObject GC1;
     public GameObject GC2; 
     //News Tab on / off objects
     public GameObject NewsTabON;
     public GameObject NewsTabOFF;
     //News Tab Cards
-    //public GameObject NewsCards;
     public GameObject NC1;
     public GameObject NC2;
     //Director Tab on / off objects
     public GameObject DirectorTabON;
     public GameObject DirectorTabOFF;
     //Director Tab Cards
-   // public GameObject DirectorCards;
     public GameObject DC1;
     public GameObject DC2;
     //Faculty Tab on / off objects
     public GameObject FacultyTabON;
     public GameObject FacultyTabOFF;
     //Faculty Tab Cards
-   // public GameObject FacultyCards;
     public GameObject FC1;
     public GameObject FC2;
     //instruction card
-    public GameObject InstructionCard;
+    public GameObject LabInstructionCard;
 
 
     // Start is called before the first frame update
@@ -47,73 +48,54 @@ public class TabManager : MonoBehaviour
     {
         StateChecker();
     }
+    /// <summary>
+    /// Lab Menu Tabs
+    /// </summary>
     private void StateChecker()
     {
-        //general tab Checker
-        /*if (GeneralTabOFF.activeInHierarchy)
-        {
-            GeneralCards.SetActive(false);
-        }*/
-        if (GeneralTabON.activeInHierarchy)
-        {
-            //make instruction card inactive
-            InstructionCard.SetActive(false);
-            //make all other tabs off
-            NewsTabON.SetActive(false);
-            DirectorTabON.SetActive(false);
-            FacultyTabON.SetActive(false);
-            //turn on General cards
-          //  GeneralCards.SetActive(true);
+          //general tab Checker
+                if (GeneralTabON.activeInHierarchy)
+                {
+                    //make instruction card inactive
+                    LabInstructionCard.SetActive(false);
+                    //make all other tabs off
+                    NewsTabON.SetActive(false);
+                    DirectorTabON.SetActive(false);
+                    FacultyTabON.SetActive(false);
+                }
+                //news tab Checker
+                if (NewsTabON.activeInHierarchy)
+                {
+                    //make instruction card inactive
+                    LabInstructionCard.SetActive(false);
+                    //make all other tabs off
+                    GeneralTabON.SetActive(false);
+                    DirectorTabON.SetActive(false);
+                    FacultyTabON.SetActive(false);
+
+                }
+                //director tab Checker
+                if (DirectorTabON.activeInHierarchy)
+                {
+                    //make instruction card inactive
+                    LabInstructionCard.SetActive(false);
+                    //make all other tabs off
+                    GeneralTabON.SetActive(false);
+                    NewsTabON.SetActive(false);
+                    FacultyTabON.SetActive(false);
+                }
+                //faculty tab Checker
+                if (FacultyTabON.activeInHierarchy)
+                {
+                    //make instruction card inactive
+                    LabInstructionCard.SetActive(false);
+                    //make all other tabs off
+                    GeneralTabON.SetActive(false);
+                    NewsTabON.SetActive(false);
+                    DirectorTabON.SetActive(false);
+     
         }
-        //news tab Checker
-        /*
-        if (NewsTabOFF.activeInHierarchy)
-        {
-            NewsCards.SetActive(false);
-        }*/
-        if (NewsTabON.activeInHierarchy)
-        {
-            //make instruction card inactive
-            InstructionCard.SetActive(false);
-            //make all other tabs off
-            GeneralTabON.SetActive(false);
-            DirectorTabON.SetActive(false);
-            FacultyTabON.SetActive(false);
-            //turn on news cards
-            //NewsCards.SetActive(true);
-        }
-        //director tab Checker
-        /*if (DirectorTabOFF.activeInHierarchy)
-        {
-            DirectorCards.SetActive(false);
-        }*/
-        if (DirectorTabON.activeInHierarchy)
-        {
-            //make instruction card inactive
-            InstructionCard.SetActive(false);
-            //make all other tabs off
-            GeneralTabON.SetActive(false);
-            NewsTabON.SetActive(false);
-            FacultyTabON.SetActive(false);
-            //turn on director cards
-           // DirectorCards.SetActive(true);
-        }
-        //faculty tab Checker
-        /*if (FacultyTabOFF.activeInHierarchy)
-        {
-            FacultyCards.SetActive(false);
-        }*/
-        if (FacultyTabON.activeInHierarchy)
-        {
-            //make instruction card inactive
-            InstructionCard.SetActive(false);
-            //make all other tabs off
-            GeneralTabON.SetActive(false);
-            NewsTabON.SetActive(false);
-            DirectorTabON.SetActive(false);
-            //turn on faculty cards
-            //FacultyCards.SetActive(true);
-        }
+
     }
     public void GeneralTabSelected()
     {
@@ -121,7 +103,7 @@ public class TabManager : MonoBehaviour
         GC1.SetActive(true);
         GC2.SetActive(false);
         //make instruction card inactive
-        InstructionCard.SetActive(false);
+        LabInstructionCard.SetActive(false);
         GeneralTabON.SetActive(true);
         //turn others off the on
         NewsTabON.SetActive(false);
@@ -140,7 +122,7 @@ public class TabManager : MonoBehaviour
         NC1.SetActive(true);
         NC2.SetActive(false);
         //make instruction card inactive
-        InstructionCard.SetActive(false);
+        LabInstructionCard.SetActive(false);
         NewsTabON.SetActive(true);
         //turn others off the on 
         GeneralTabON.SetActive(false);
@@ -159,7 +141,7 @@ public class TabManager : MonoBehaviour
         DC1.SetActive(true);
         DC2.SetActive(false);
         //make instruction card inactive
-        InstructionCard.SetActive(false);
+        LabInstructionCard.SetActive(false);
         DirectorTabON.SetActive(true);
         //turn others off the on 
         GeneralTabON.SetActive(false);
@@ -178,7 +160,7 @@ public class TabManager : MonoBehaviour
         FC1.SetActive(true);
         FC2.SetActive(false);
         //make instruction card inactive
-        InstructionCard.SetActive(false);
+        LabInstructionCard.SetActive(false);
         FacultyTabON.SetActive(true);
         //turn others off the on 
         GeneralTabON.SetActive(false);
@@ -192,24 +174,29 @@ public class TabManager : MonoBehaviour
         StateChecker();
     }
 
+    /// <summary>
+    /// reset all of the tabs 
+    /// </summary>
     public void ResetTabs()
     {
-        //turn on instructions
-        InstructionCard.SetActive(true);
-        //turn off the icons
-        GeneralTabON.SetActive(false);
-        NewsTabON.SetActive(false);
-        DirectorTabON.SetActive(false);
-        FacultyTabON.SetActive(false);
-        //reset the cards
-        GC1.SetActive(false);
-        GC2.SetActive(false);
-        NC1.SetActive(false);
-        NC2.SetActive(false);
-        DC1.SetActive(false);
-        DC2.SetActive(false);
-        FC1.SetActive(false);
-        FC2.SetActive(false);
+
+                //turn on instructions
+                LabInstructionCard.SetActive(true);
+                //turn off the icons
+                GeneralTabON.SetActive(false);
+                NewsTabON.SetActive(false);
+                DirectorTabON.SetActive(false);
+                FacultyTabON.SetActive(false);
+                //reset the cards
+                GC1.SetActive(false);
+                GC2.SetActive(false);
+                NC1.SetActive(false);
+                NC2.SetActive(false);
+                DC1.SetActive(false);
+                DC2.SetActive(false);
+                FC1.SetActive(false);
+                FC2.SetActive(false);
+
 
     }
 }

@@ -17,7 +17,7 @@ public class ManageScenes : MonoBehaviour
     public static string PortalEntered;
 
     //all assets for discovery scene
-    public TextMeshProUGUI StopTitleText;
+   // public TextMeshProUGUI StopTitleText;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +31,7 @@ public class ManageScenes : MonoBehaviour
         SceneName = SceneManager.GetActiveScene().name;
         ModeText.text = SceneName.ToLower();
         SceneChecker();
-        UpdateDiscovery();
+        //UpdateDiscovery();
     }
     private void SceneChecker()
     {
@@ -61,36 +61,5 @@ public class ManageScenes : MonoBehaviour
         PortalEntered = PortalClicked;
 
     }
-    public void UpdateDiscovery()
-    {
-        if(PortalEntered == "asphalt")
-        {
-            StopTitleText.text = "mizzou asphalt & inovation lab";
-        }
-        if (PortalEntered == "spot")
-        {
-            StopTitleText.text = "Autonomous Systems lab";
-        }
-        if (PortalEntered == "ceri")
-        {
-            StopTitleText.text = "Cyber Education Research & Infrastructure";
-        }
-        if (PortalEntered == "Library")
-        {
-            StopTitleText.text = "engineering library";
-        }
-        if (PortalEntered == "pec")
-        {
-            StopTitleText.text = "potential energy cafe";
-        }
-        if (PortalEntered == "vr")
-        {
-            StopTitleText.text = "virtual reality lab";
-        }
-        if (PortalEntered == "3d")
-        {
-            StopTitleText.text = "3D printing lab";
-        }
 
-    }
 }

@@ -44925,7 +44925,6 @@ MonoBehaviour:
   ModeText: {fileID: 396525825}
   ExitModeON: {fileID: 248392497}
   ExitModeOFF: {fileID: 1553308927}
-  StopTitleText: {fileID: 170519670}
 --- !u!114 &2066862137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44960,6 +44959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0d63e2dfb027754ab5402a889b566c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LabMenu: {fileID: 1810057466}
   GeneralTabON: {fileID: 1379183270}
   GeneralTabOFF: {fileID: 1379183268}
   GC1: {fileID: 1898146864}
@@ -44976,7 +44976,7 @@ MonoBehaviour:
   FacultyTabOFF: {fileID: 157872336}
   FC1: {fileID: 775520763}
   FC2: {fileID: 1267083748}
-  InstructionCard: {fileID: 1105844566}
+  LabInstructionCard: {fileID: 1105844566}
 --- !u!114 &2066862139
 MonoBehaviour:
   m_ObjectHideFlags: 0
