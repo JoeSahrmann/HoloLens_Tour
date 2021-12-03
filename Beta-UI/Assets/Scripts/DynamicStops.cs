@@ -22,16 +22,24 @@ public class DynamicStops : MonoBehaviour
     public TextMeshProUGUI GeneralBlurb;
     public TextMeshProUGUI GeneralDetails;
     public Image GeneralHeaderPhoto;
+    public AudioSource GeneralAudio1;
+    public AudioSource GeneralAudio2;
     //News Cards
     public TextMeshProUGUI NewsBlurb;
     public TextMeshProUGUI NewsDetails;
+    public AudioSource NewsAudio1;
+    public AudioSource NewsAudio2;
     //Director Cards
     public TextMeshProUGUI DirBlurb;
     public TextMeshProUGUI DirDetails;
     public Image DirectorPhoto;
+    public AudioSource DirectorAudio1;
+    public AudioSource DirectorAudio2;
     //Faculty Cards
     public TextMeshProUGUI FacBlurb;
     public TextMeshProUGUI FacDetails;
+    public AudioSource FacultyAudio1;
+    public AudioSource FacultyAudio2;
     //all header materials
     public Material Asphalt_Header;
     public Material CERI_Header;
@@ -44,6 +52,73 @@ public class DynamicStops : MonoBehaviour
     public Material SPOT_Director;
     public Material VR_Director;
     public Material ThreeD_Director;
+    //audio clips 
+    //asphalt lab clips
+    //general audio
+    public AudioClip Audio_Asphalt_G_Blurb;
+    public AudioClip Audio_Asphalt_G_Details;
+    //news audio 
+    public AudioClip Audio_Asphalt_N_Blurb;
+    public AudioClip Audio_Asphalt_N_Details;
+    //director audio
+    public AudioClip Audio_Asphalt_D_Blurb;
+    public AudioClip Audio_Asphalt_D_Details;
+    //faculty audio
+    public AudioClip Audio_Asphalt_F_Blurb;
+    public AudioClip Audio_Asphalt_F_Details;
+    //Autonomous systems clips
+    //general audio
+    public AudioClip Audio_SPOT_G_Blurb;
+    public AudioClip Audio_SPOT_G_Details;
+    //news audio 
+    public AudioClip Audio_SPOT_N_Blurb;
+    public AudioClip Audio_SPOT_N_Details;
+    //director audio
+    public AudioClip Audio_SPOT_D_Blurb;
+    public AudioClip Audio_SPOT_D_Details;
+    //faculty audio
+    public AudioClip Audio_SPOT_F_Blurb;
+    public AudioClip Audio_SPOT_F_Details;
+    //CERI clips
+    //general audio
+    public AudioClip Audio_CERI_G_Blurb;
+    public AudioClip Audio_CERI_G_Details;
+    //news audio 
+    public AudioClip Audio_CERI_N_Blurb;
+    public AudioClip Audio_CERI_N_Details;
+    //director audio
+    public AudioClip Audio_CERI_D_Blurb;
+    public AudioClip Audio_CERI_D_Details;
+    //faculty audio
+    public AudioClip Audio_CERI_F_Blurb;
+    public AudioClip Audio_CERI_F_Details;
+    //VR Clips
+    //general audio
+    public AudioClip Audio_VR_G_Blurb;
+    public AudioClip Audio_VR_G_Details;
+    //news audio 
+    public AudioClip Audio_VR_N_Blurb;
+    public AudioClip Audio_VR_N_Details;
+    //director audio
+    public AudioClip Audio_VR_D_Blurb;
+    public AudioClip Audio_VR_D_Details;
+    //faculty audio
+    public AudioClip Audio_VR_F_Blurb;
+    public AudioClip Audio_VR_F_Details;
+    //3D Printing Clips
+    //general audio
+    public AudioClip Audio_3D_G_Blurb;
+    public AudioClip Audio_3D_G_Details;
+    //news audio 
+    public AudioClip Audio_3D_N_Blurb;
+    public AudioClip Audio_3D_N_Details;
+    //director audio
+    public AudioClip Audio_3D_D_Blurb;
+    public AudioClip Audio_3D_D_Details;
+    //faculty audio
+    public AudioClip Audio_3D_F_Blurb;
+    public AudioClip Audio_3D_F_Details;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -136,17 +211,30 @@ public class DynamicStops : MonoBehaviour
         //general cards
         GeneralBlurb.text = Asphalt_G_Blurb;
         GeneralDetails.text = Asphalt_G_Detials;
+        //assing audio
+        GeneralAudio1.clip = Audio_Asphalt_G_Blurb;
+        GeneralAudio2.clip = Audio_Asphalt_G_Details;
         //news cards
         NewsBlurb.text = Asphalt_N_Blurb;
         NewsDetails.text = Asphalt_N_Detials;
+        //assing audio
+        NewsAudio1.clip = Audio_Asphalt_N_Blurb;
+        NewsAudio2.clip = Audio_Asphalt_N_Details;
         //director cards
         DirBlurb.text = Asphalt_D_Blurb;
         DirDetails.text = Asphalt_D_Detials;
         //director Photo
         DirectorPhoto.material = Asphalt_Director;
+        //assing audio
+        DirectorAudio1.clip = Audio_Asphalt_D_Blurb;
+        DirectorAudio2.clip = Audio_Asphalt_D_Details;
         //facult cards
         FacBlurb.text = Asphalt_F_Blurb;
         FacDetails.text = Asphalt_F_Detials;
+        //assing audio
+        FacultyAudio1.clip = Audio_Asphalt_F_Blurb;
+        FacultyAudio2.clip = Audio_Asphalt_F_Details;
+
 
     }
     private void SPOT()
@@ -185,7 +273,19 @@ public class DynamicStops : MonoBehaviour
         //facult cards
         FacBlurb.text = SPOT_F_Blurb;
         FacDetails.text = SPOT_F_Detials;
-
+        //assing audio
+        //general
+        GeneralAudio1.clip = Audio_SPOT_G_Blurb;
+        GeneralAudio2.clip = Audio_Asphalt_G_Details;
+        //news
+        NewsAudio1.clip = Audio_SPOT_N_Blurb;
+        NewsAudio2.clip = Audio_SPOT_N_Details;
+        //director
+        DirectorAudio1.clip = Audio_SPOT_D_Blurb;
+        DirectorAudio2.clip = Audio_SPOT_D_Details;
+        //faculty
+        FacultyAudio1.clip = Audio_SPOT_F_Blurb;
+        FacultyAudio2.clip = Audio_SPOT_F_Details;
     }
     private void CERI()
     {
@@ -223,6 +323,19 @@ public class DynamicStops : MonoBehaviour
         //facult cards
         FacBlurb.text = CERI_F_Blurb;
         FacDetails.text = CERI_F_Detials;
+        //assing audio
+        //general
+        GeneralAudio1.clip = Audio_CERI_G_Blurb;
+        GeneralAudio2.clip = Audio_CERI_G_Details;
+        //news
+        NewsAudio1.clip = Audio_CERI_N_Blurb;
+        NewsAudio2.clip = Audio_CERI_N_Details;
+        //director
+        DirectorAudio1.clip = Audio_CERI_D_Blurb;
+        DirectorAudio2.clip = Audio_CERI_D_Details;
+        //faculty
+        FacultyAudio1.clip = Audio_CERI_F_Blurb;
+        FacultyAudio2.clip = Audio_CERI_F_Details;
 
     }
     private void VR()
@@ -261,6 +374,19 @@ public class DynamicStops : MonoBehaviour
         //facult cards
         FacBlurb.text = VR_F_Blurb;
         FacDetails.text = VR_F_Detials;
+        //assing audio
+        //general
+        GeneralAudio1.clip = Audio_VR_G_Blurb;
+        GeneralAudio2.clip = Audio_VR_G_Details;
+        //news
+        NewsAudio1.clip = Audio_VR_N_Blurb;
+        NewsAudio2.clip = Audio_VR_N_Details;
+        //director
+        DirectorAudio1.clip = Audio_VR_D_Blurb;
+        DirectorAudio2.clip = Audio_VR_D_Details;
+        //faculty
+        FacultyAudio1.clip = Audio_VR_F_Blurb;
+        FacultyAudio2.clip = Audio_VR_F_Details;
 
     }
     private void ThreeD()
@@ -299,6 +425,19 @@ public class DynamicStops : MonoBehaviour
         //facult cards
         FacBlurb.text = ThreeD_F_Blurb;
         FacDetails.text = ThreeD_F_Detials;
+        //assing audio
+        //general
+        GeneralAudio1.clip = Audio_3D_G_Blurb;
+        GeneralAudio2.clip = Audio_3D_G_Details;
+        //news
+        NewsAudio1.clip = Audio_3D_N_Blurb;
+        NewsAudio2.clip = Audio_3D_N_Details;
+        //director
+        DirectorAudio1.clip = Audio_3D_D_Blurb;
+        DirectorAudio2.clip = Audio_3D_D_Details;
+        //faculty
+        FacultyAudio1.clip = Audio_3D_F_Blurb;
+        FacultyAudio2.clip = Audio_3D_F_Details;
 
     }
 }
